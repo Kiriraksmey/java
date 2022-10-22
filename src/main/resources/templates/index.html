@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            background-color: chocolate;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            color: antiquewhite;
+            text-decoration: none;
+
+
+        }
+        li a:hover{
+            background-color: #c20d0d;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <nav>
+        <ul>
+            <li><a th:href="@{home}">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+</div>
+<div class="container"  layout:fragment="content" style="background: gray">
+
+</div>
+<div class="footer" layout:fragment="footer" style="background:red"></div>
+</body>
+</html>
