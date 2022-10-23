@@ -11,4 +11,10 @@ public class StaffController {
 
         return "home-page/index";
     }
+    @GetMapping("about")
+    public String about(){
+
+        return "about/index";
+    }
+
 }
